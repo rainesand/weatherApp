@@ -1,4 +1,4 @@
-var apiKey = "";
+var apiKey = "6d5c05d695c258c26331ffda6614ba80";
 var openWeatherMap = "http://api.openweathermap.org/data/2.5/weather?q=";
 var weatherQParams = "&units=imperial&APPID=" + apiKey;
 
@@ -47,6 +47,6 @@ $(document).ready(function () {
     $("#search").on('click', function () {
         var newSearchTerm = $("#query").val();
         console.log(newSearchTerm);
-        searchCurrentWeather(newSearchTerm);
+        searchWeather(newSearchTerm);
     });
 })
